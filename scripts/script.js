@@ -25,7 +25,7 @@ function populatePage() {
     const productEntry = document.createElement('product-item');
     productEntry.setAttribute('title', product.title);
     productEntry.setAttribute('img', product.image);
-    productEntry.setAttribute('price', product.price);
+    productEntry.setAttribute('price', product.price.toFixed(2));
     productEntry.setAttribute('product-id', product.id);
 
     productList.appendChild(productEntry);
